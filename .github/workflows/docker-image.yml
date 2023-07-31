@@ -27,7 +27,7 @@ jobs:
     - name: Build the Docker image
       run:  |
         docker build -t kirotodo/docker-graphql:0.0.2 .
-        docker build kirotodo/docker-graphql:latest
+        docker build -t kirotodo/docker-graphql:latest
     - name: Push the Docker image
       run:  |
         docker push kirotodo/docker-graphql:0.0.2
